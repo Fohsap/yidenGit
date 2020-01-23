@@ -13,3 +13,7 @@ type `git status` to see that it is not tracked, again.
 type `git add readme.txt` to re-stage it.
 change readme.txt and save it.
 type `git status` to see that it is staged-unstaged (a pre-edit version is staged, the latest version is not).
+`PS W:\prj\yidenGit> git config --global user.email your-email@wherever.com`
+`PS W:\prj\yidenGit> git config --global user.name "Your-Username"`
+type `git commit` and type a commit message to commit.
+type `git commit -m "this is my first bash commit." to commit without using a text editor.
