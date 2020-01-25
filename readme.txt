@@ -74,4 +74,10 @@ git checkout origin/master LICENSE
 git commit
 git push --force --set-upstream origin master
 git status
-
+edit some files.
+git add .
+git commit
+git push -u origin master
+	this should work without errors!
+	
+	
