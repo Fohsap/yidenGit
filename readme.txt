@@ -79,5 +79,38 @@ git add .
 git commit
 git push -u origin master
 	this should work without errors!
+
+UNDOING STUFF:
+	RE-SUBMIT A COMMIT WITHOUT NEW MESSAGES:
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
+You end up with a single commit — the second commit replaces the results of the first.
+
+	UNSTAGE A FILE:
+$ git reset HEAD CONTRIBUTING.md
+The command is a bit strange, but it works. The CONTRIBUTING.md file is modified but once again unstaged.
+
+	GET THE PRE-MODIFIED VERSION OF A FILE:
+modified:   CONTRIBUTING.md
+It tells you pretty explicitly how to discard the changes you’ve made. Let’s do what it says:
+$ git checkout -- CONTRIBUTING.md
+
+REMOTE STUFF:
 	
-	
+	WHAT IS FETCH:
+fetch all the information in Pauls but not your repository, you can run:
+`git fetch pb`.
+Paul’s master branch is now accessible locally as pb/master.
+git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.
+`git pull` does fetch and merge on tracked branches: remote branches are tracked by default.
+
+	INSPECTING A REMOTE:
+$ git remote show origin
+Tells you which branches you don't have yet and which are automatically pushed to.
+
+	RENAME A REMOTE:
+$ git remote rename pb paul
+
+	REMOVE A REMOTE:
+$ git remote remove paul
