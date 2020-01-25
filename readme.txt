@@ -62,3 +62,16 @@ fetching will pull but not merge.
 change just_a_file.txt
 `git commit -a -m 'just_a_file changes'`. 
 login. `git push origin master` will as for CREDENTIALS.
+
+Add additional remote repos:
+git remote add MyRepo <url>.
+git remote 
+git remote -v
+git fetch myrepo...
+
+PUSHING BY FORCE!
+git checkout origin/master LICENSE
+git commit
+git push --force --set-upstream origin master
+git status
+
