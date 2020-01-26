@@ -114,3 +114,10 @@ $ git remote rename pb paul
 
 	REMOVE A REMOTE:
 $ git remote remove paul
+
+	IGNORE THESE ERROR MESSAGES:
+"warning: LF will be replaced by CRLF in .gitignore."
+
+	FULL SESSION FOR CREATING A PROJECT THAT YOU OWN
+ cargo new yiden > cd yiden > git remote add origin https://github.com/Fohsap/yiden > git pull -OR- git pull git checkout origin/master then git checkout master > git add . > git commit > git push
+ 
