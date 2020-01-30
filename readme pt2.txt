@@ -21,3 +21,11 @@ git remote show origin
 alias graph="git log --all --decorate --oneline --graph"
 graph
 
+//The name is too long: renaming it (locally then remotely).  You can do this from any branch.  Optionally remove <old-branch-name> if you're on the branch you're renaming.
+git branch -m <old-branch-name> <new-branch-name>
+git status
+git branch -m <old-branch-name> <new-branch-name>
+git push <remote-repo> -d <old-branch-name>
+git push <remote-repo> <new-branch-name>
+git checkout <new-branch-name>
+git push <remote-repo> -u <new-branch-name>
